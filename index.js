@@ -41,11 +41,9 @@ class RangeValidator {
     validate(value) {
         if(value >= this._from && value <= this._to){
             alert('такое число есть');
-            } else {
-              throw new RangeError('Это число не входит в заданный диапазон');
-  
-            }
-        
+        } else {
+            throw new RangeError('Это число не входит в заданный диапазон');
+        }
     }
 }
 
