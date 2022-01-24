@@ -39,15 +39,13 @@ class RangeValidator {
     }
 
     validate(value) {
-        for (let i = this._from; i <= this._to; i++) {
-            if(value >= this._from && value <= this._to){
+        if(value >= this._from && value <= this._to){
             alert('такое число есть');
-            break;
             } else {
               throw new RangeError('Это число не входит в заданный диапазон');
   
             }
-        }
+        
     }
 }
 
